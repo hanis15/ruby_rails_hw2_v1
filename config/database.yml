@@ -18,8 +18,8 @@ development:
   encoding: unicode
   database: ruby_rails_hw2_v1_development
   pool:     5
-  username: ruby_rails_hw2_v1
-  password:
+  username: jaros
+  password: aaa
   template: template0
 
   # Connect on a TCP socket. Omitted by default since the client uses a
