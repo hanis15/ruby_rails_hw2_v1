@@ -44,14 +44,14 @@ group :development do
   gem 'spring'
 end
 
-
+gem 'exception_notification', :require => 'exception_notifier'
 gem 'devise'
 gem 'pg'
 gem 'puma'
 gem 'slim-rails'
+gem 'better_errors'
 
 group :development do
-  gem 'better_errors'
   gem 'haml2slim'
   gem 'html2haml'
   gem 'quiet_assets'
