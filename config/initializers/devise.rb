@@ -6,13 +6,13 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` on Rails 4+ applications as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'efd75519d496f9b496956109d8153a31ca0646358773887a6c2790a2be96298eebdc2afc621a74124799d9164f6e171bea719a03b01258365e7eead86847d14b'
+  # config.secret_key = 'c08aef84f600cd4aa689158f5ab9eb45ef289e28f2c6301100b11bad1b97e26807e88b72edee02367a69459bc2bd7799e4d718412f73fef946c7a1d7200ea645'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'ruby_home_work2@myRuby.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -99,7 +99,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '6b3be2d2f0dcd68035616180b79bc7c262cee4e7e5ef4dda6ab86320e6989a508ecfb8a3c54a786b27bd23d2c01377e233a91ae3bf15f8e8945a2dbaaa31638a'
+  # config.pepper = 'b83a18681e2f0d78f3da0a337e680313c4d77dc2aba00dd7f9ae48892f01123737f73d5b72634b716723c6a8296c4398365c920a35b0b39ed4789b1dc82dfb91'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -121,7 +121,7 @@ Devise.setup do |config|
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
   # db field (see migrations). Until confirmed, new email is stored in
   # unconfirmed_email column, and copied to email column on successful confirmation.
-  config.reconfirmable = true
+  config.reconfirmable = false
 
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [:email]

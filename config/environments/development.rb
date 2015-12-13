@@ -27,19 +27,25 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  # config.action_mailer.smtp_settings = {
+  #  :address => "smtp.gmail.com",
+  #  :port => 587,
+  #  :domain => "gmail.com",
+  #  :authentication => "plain",
+  #  :enable_starttls_auto => true,
+  #  :user_name => "hanakjarek@gmail.com",
+  #  :password => ""
+  # }
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
+    address: "smtp.mailgun.org",
     port: 587,
-    domain: Rails.application.secrets.domain_name,
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: Rails.application.secrets.email_provider_username,
-    password: Rails.application.secrets.email_provider_password
-  }
+    user_name: "postmaster@sandboxf5b98531d4d04b1881d33b2cc5678171.mailgun.org",
+    password: "13fc4ef0303bceb0d9a27779034c8737"
+    }
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
   # Send email in development mode?
   config.action_mailer.perform_deliveries = true
 
